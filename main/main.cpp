@@ -7,7 +7,7 @@ extern "C" void app_main(void)
     UartDriver uart(&UART1, GPIO_NUM_25, GPIO_NUM_26, 115200);
     uart.Init();
 
-    uart.WriteString("C++ UART Driver Ready!\r\n");
+    uart.WriteString("Hello uart driver \r\n");
 
     uint8_t rxChar;
     while (true)
